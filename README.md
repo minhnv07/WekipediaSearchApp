@@ -4,6 +4,7 @@
 
 Đây là một ứng dụng web cho phép người dùng tìm kiếm bài viết trên Wikipedia theo từ khóa. Ứng dụng sử dụng **JavaScript thuần (Vanilla JS)**, gọi API từ Wikipedia và hiển thị kết quả dưới dạng lưới, cho phép xem chi tiết từng bài viết với trải nghiệm người dùng mượt mà, responsive.
 
+Link demo: https://wekipedia-search-app.vercel.app/
 ---
 
 ## Tính năng chính
@@ -58,7 +59,7 @@ WIKIPEDIASEARCHAPPLICATION/
      cd wikipedia-search
      ```
 
-2. **Mở file `index.html` bằng trình duyệt**
+2. **Mở file `index.html` bằng trình duyệt** 
 
 3. **Bắt đầu tìm kiếm**
    - Nhập từ khóa, chọn gợi ý hoặc nhấn Enter
