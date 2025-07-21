@@ -70,15 +70,15 @@ WIKIPEDIASEARCHAPPLICATION/
 
 - **Wikipedia Search API**
 ```
-https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch={keyword}&gsrlimit=20&prop=extracts|pageimages|info&pithumbsize=400&inprop=url&format=json&origin=*
+https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(keyword)}&gsrlimit=10&prop=pageimages|extracts|info&inprop=url&piprop=thumbnail&pithumbsize=300&exintro&explaintext&exlimit=max&format=json&origin=*
 ```
 - **Suggestion API (gợi ý tìm kiếm)**
 ```
-https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch={keyword}&srlimit=3&format=json&origin=*
+https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}&gsrlimit=3&prop=pageimages|extracts&exintro&explaintext&exlimit=max&format=json&origin=*
 ```
 - **Chi tiết bài viết**
 ```
-https://en.wikipedia.org/w/api.php?action=query&pageids={pageid}&prop=extracts|pageimages|info&pithumbsize=400&inprop=url&format=json&origin=*
+https://en.wikipedia.org/w/api.php?action=query&pageids=${pageid}&prop=extracts|pageimages|info&pithumbsize=400&inprop=url&redirects=&format=json&origin=*
 ```
 
 ---
