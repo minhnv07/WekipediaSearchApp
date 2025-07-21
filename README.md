@@ -37,12 +37,15 @@
 ---
 
 ## Cấu trúc dự án
-/wikipedia-search/
-├── index.html // Giao diện chính
-├── style.css // CSS layout và responsive
-├── script.js // Logic chính: API, sự kiện, render UI
-├── README.md // Tài liệu mô tả dự án
-
+```
+WIKIPEDIASEARCHAPPLICATION/
+├── Assignment_FEA.pdf     # File đề bài gốc từ FEA
+├── README.md              # File mô tả dự án
+└── src/
+    ├── index.html         # Giao diện chính của ứng dụng
+    ├── script.js          # JavaScript: gọi API, xử lý sự kiện, render UI
+    └── style.css          # CSS layout, responsive, và style cho trang web
+```
 
 ---
 
@@ -51,7 +54,7 @@
 1. **Tải dự án về máy hoặc mở bằng Live Server**
    - Hoặc clone từ GitHub nếu có:
      ```bash
-     git clone https://github.com/ten-cua-ban/wikipedia-search.git
+     git clone https://github.com/minhnv07/WekipediaSearchApp.git
      cd wikipedia-search
      ```
 
@@ -66,11 +69,21 @@
 ## 🔗 API sử dụng
 
 - **Wikipedia Search API**
+```
 https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch={keyword}&gsrlimit=20&prop=extracts|pageimages|info&pithumbsize=400&inprop=url&format=json&origin=*
-
+```
 - **Suggestion API (gợi ý tìm kiếm)**
-[text](https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch={keyword}&srlimit=3&format=json&origin=*)
-
+```
+https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch={keyword}&srlimit=3&format=json&origin=*
+```
 - **Chi tiết bài viết**
+```
 https://en.wikipedia.org/w/api.php?action=query&pageids={pageid}&prop=extracts|pageimages|info&pithumbsize=400&inprop=url&format=json&origin=*
+```
 
+---
+## 📜 Ghi chú
+
+- Dữ liệu được lấy từ [Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page)
+
+---
