@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm kiếm Wikipedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Wikipedia Search</h2>
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Enter keyword here">
+            <div id="suggestion-box" class="suggestion-box"></div>
+            <button type="submit">Search</button>
+        </form>
+        <div id="loading" >Đang tải...</div>
+
+        <div id="message"></div>
+    
+    </div>
+    <div id="resultContainer">
+        <h3>Search Results</h3>
+        <div id="result"></div>
+    </div>
+
+    <div id="detail" style="display:none"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
